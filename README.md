@@ -84,7 +84,7 @@ Reference: [RFC7483 - JSON Responses for the Registration Data Access Protocol (
 <details><summary>Example Response</summary>
 <p>
 
-```json
+```jsonc
 {
   objectClassName: 'domain',
   handle: '2138514_DOMAIN_COM-VRSN',
