@@ -1,6 +1,6 @@
 {
   "name": "rdap-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A typescript node client, based on the IANA RDAP DNS database, to look for domain information.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
