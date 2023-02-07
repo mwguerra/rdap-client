@@ -16,10 +16,10 @@ then
   exit
 fi
 
-currentVersion="$(jq -r .version ../package.json)"
+currentVersion="$(jq -r .version ./package.json)"
 echo "Current version: $currentVersion"
 read -p 'Next Version: ' nextVersion
-jq ".version = \"$nextVersion\"" ../package.json > ../temp.json && mv ../temp.json ../package.json
+jq ".version = \"$nextVersion\"" ./package.json > ./temp.json && mv ./temp.json ./package.json
 
 yarn run changelog
 
