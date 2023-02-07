@@ -1,6 +1,6 @@
 # rdap-client
 
-A node client built with typescript that uses the iana RDAP DNS database to lookup WHOIS information for free.
+A RDAP client for Node.js built with typescript that uses the iana RDAP DNS database to lookup domain information.
 
 ## Installation
 
