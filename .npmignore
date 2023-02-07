@@ -1,0 +1,13 @@
+.DS_Store
+.DS_Store/
+.idea/
+.vscode/
+node_modules/
+scripts/
+src/
+test/
+.mocharc.json
+package-lock.json
+tsconfig.json
+yarn.lock
+yarn-error.log
