@@ -38,3 +38,4 @@ git tag v$nextVersion
 git push
 git push --tags
 
+npm publish --access=public
