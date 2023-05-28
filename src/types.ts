@@ -91,7 +91,7 @@ export interface RdapEntity {
   legalRepresentative: string
 }
 
-export interface RdapResponse {
+export interface RdapRawResponse {
   objectClassName: string
   handle: string
   ldhName: string

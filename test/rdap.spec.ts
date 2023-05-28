@@ -1,8 +1,8 @@
 import assert from "assert";
-import rdapClient from "../src";
+import { rdapClient } from "../src";
 import { ERRORS } from "../src/constants";
 
-describe("whois tests", () => {
+describe("rdap tests", () => {
     it("should find google.com successfully", async () => {
         const response = await rdapClient("google.com");
         assert.ok(response);

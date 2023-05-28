@@ -1,7 +1,8 @@
 import fs from "fs";
-import { DomainExtension, RDAPServer, TLDData, RdapResponse } from "./types";
+import { DomainExtension, RDAPServer, TLDData, RdapRawResponse } from "./types";
 import axios, { AxiosResponse } from "axios";
 import { ERRORS } from "./constants";
+import { RdapData, RdapResponse } from "./libraries/RdapData"
 
 let dns: Array<TLDData> = [];
 
@@ -102,7 +103,7 @@ function buildRdapRequestUrl(domainToQuery: string): string {
     return `${serverUrl}/domain/${query.hostname}`;
 }
 
-async function rdapClient(domain: string): Promise<RdapResponse> {
+async function rdapClient(domain: string): Promise<RdapRawResponse> {
     if (domain.trim() === '') {
         throw new Error(ERRORS.NoDomainError)
     }
@@ -123,4 +124,4 @@ async function rdapClient(domain: string): Promise<RdapResponse> {
     return response.data
 }
 
-export default rdapClient;
+export { rdapClient, RdapData, RdapRawResponse, RdapResponse };
