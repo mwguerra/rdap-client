@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import rdapClient from "../index";
+import { rdapClient } from "../index";
 
 const args = process.argv.splice(2);
 const domain = args[0];

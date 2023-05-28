@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/mwguerra/rdap-client/compare/v1.0.3...v1.0.4) (2023-05-28)
+
+
+### Features
+
+* add rdap response structure and tests ([43efc14](https://github.com/mwguerra/rdap-client/commit/43efc149cc5afd9a94bf6f60d398e8ae035fda67))
+
+
+
 ## [1.0.3](https://github.com/mwguerra/rdap-client/compare/v1.0.2...v1.0.3) (2023-02-07)
 
 
